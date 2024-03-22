@@ -1,0 +1,157 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 16);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #100303;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #120505;
+}
+
+.active a {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+}
+
+/* Content styles */
+.content {
+    margin: 100px 20px 20px 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(226, 226, 16);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}
+#heading{
+    height: 60px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: 30px lightseagreen; 
+    color: blue; 
+    font-size: xx-large;
+    padding-right: 5px;
+}
+#img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    height: 300px;
+    width: 80%;
+    border-radius: 30px;
+}
+.imgtext{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+}
+#instalogo {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-repeat: no-repeat;
+}
+#okapi-wasb-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto auto;
+    opacity: 0.95;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+
+    header {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+    }

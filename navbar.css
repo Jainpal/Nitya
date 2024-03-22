@@ -1,0 +1,112 @@
+/* this is for importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Concert+One&family=DM+Serif+Display:ital@1&family=Handjet:wght@300&family=Josefin+Sans:ital@1&family=Kalam&family=Orbitron:wght@500&family=Press+Start+2P&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+
+
+    /* this is for applying fonts */
+.Nitya-as-heading{
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+    font-style: italic;
+}
+
+.the-hope{
+    font-family: 'Press Start 2P',
+    cursive; font-size:x-small;
+    font-weight:100 ;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 135, 239);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif; font-weight: 500; font-style: italic;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #160404;
+}
+
+.active a {
+    font-weight: bold;
+    style="padding-left: 20px; padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    
+}
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 2px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(31, 135, 239);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        /* border-bottom: 5px solid rgb(0, 0, 0); */
+    }
+
+    .nav-list.active {
+        display: flex;
+        
+    }
+
+    .nav-list li {
+        margin: 0;
+        /* padding: 15px 0; */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        /* padding-left: 20px; */
+        border-bottom: 5px solid rgb(0, 0, 0);
+        /* border-left: 5px solid white;
+        border-right: 5px solid white; */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+}

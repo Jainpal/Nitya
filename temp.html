@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .containernew {
+    width: 300px;
+    height: 150px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.expandingPara {
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-width 1s, max-height 1s, opacity 1s;
+    /* white-space: nowrap; Prevents the text from wrapping while expanding */
+}
+
+    </style>
+</head>
+<body>
+    <div class="containernew">
+        <p class="expandingPara">This is a paragraph that will expand. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore cumque nulla numquam aut consectetur saepe cum dolore qui porro ducimus blanditiis minima sequi, exercitationem nemo consequuntur expedita magnam modi libero in mollitia! Quis error itaque corrupti soluta nihil eveniet nemo aliquam alias sint recusandae, sed ut culpa cupiditate, delectus beatae nesciunt libero quas minus. Eaque voluptas quos consectetur vel animi enim delectus laborum obcaecati, repudiandae non beatae debitis quaerat laudantium distinctio ab perferendis. Eos maiores tempore eligendi consequuntur, odio autem, quibusdam perspiciatis necessitatibus veniam expedita dolores sit accusantium incidunt voluptatibus inventore. Debitis est maiores atque quas nemo labore distinctio, commodi laboriosam iure mollitia corrupti officia? Quisquam architecto beatae vero quis blanditiis id similique in eligendi ipsa odio ab pariatur dolorem magnam aliquid consequatur culpa, dolores perspiciatis modi commodi exercitationem aperiam reiciendis ipsam. Earum repellendus eligendi tempore ullam explicabo eius minus quas sapiente ad? Ipsum dolor eaque atque quos vel neque et, veritatis quod exercitationem nesciunt earum incidunt velit explicabo nam consectetur eius. Porro odit recusandae beatae officia repellat velit, quasi tenetur aliquid cupiditate aspernatur repellendus sint aliquam accusamus rem dolorem ex. Ullam aliquid porro consectetur cupiditate nostrum fuga, maiores ad possimus accusamus nisi accusantium, deleniti eveniet, ipsum similique blanditiis facere magni aliquam eum corporis in eligendi laboriosam voluptates. Praesentium repudiandae molestiae perferendis minus, voluptate, omnis vitae animi architecto, esse quis recusandae iusto voluptates tempore! Natus maxime totam architecto sed laudantium, temporibus itaque voluptas quos aliquam consequatur animi vel a in modi distinctio laboriosam explicabo harum veniam sapiente, rerum iure illo et soluta nisi. Vel dolore perspiciatis corporis quidem et blanditiis autem dicta voluptas laudantium nesciunt fugit enim laborum, tenetur dolorem repellat? Nulla aut iusto fugiat est in voluptatem illum molestias tempora minima odio ipsam aliquid quia enim tempore hic quam beatae velit accusantium, inventore esse veritatis iure sequi! Commodi, quod illo. Aperiam autem accusantium quis reiciendis vitae et nemo ex debitis. Quisquam quas dignissimos enim reiciendis minus corporis nulla minima temporibus? Exercitationem quibusdam rem facere neque eligendi! Quaerat quisquam, culpa impedit repellendus ratione blanditiis dignissimos. Eum esse eius facilis magni dolorum voluptatibus pariatur temporibus vel in hic ab nesciunt iste, laudantium quas optio doloremque numquam eligendi praesentium modi animi consectetur quis vero? Quae architecto nemo magnam! Eveniet alias delectus officiis molestias ad esse nemo! Esse nobis veritatis odio ratione hic saepe ipsa, inventore maxime minus iusto. Dignissimos, possimus quae sunt nostrum saepe, magnam perferendis quaerat eligendi quibusdam voluptatem vel expedita numquam facilis aut culpa aliquid dicta repellat! Quod dolorum animi minus earum. Placeat dolor quia cumque expedita officiis! Mollitia magni dicta hic odio nesciunt deserunt nostrum, facilis commodi temporibus voluptatum modi neque, dolores iste necessitatibus repudiandae labore ullam quam dolor ipsum minus quibusdam error beatae. Pariatur nostrum animi reprehenderit aliquid odio asperiores, praesentium suscipit vel! Quam eveniet qui sunt, voluptas aliquam architecto error explicabo ipsa aperiam blanditiis ducimus, illo commodi voluptatibus velit debitis ipsum fugiat magni. Numquam porro velit praesentium ea recusandae fugiat iusto laudantium, doloremque officiis quis, hic sit libero, ipsum aut culpa officia ut. Cupiditate, necessitatibus perferendis.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const expandingPara = document.querySelector('.expandingPara');
+    
+    // Wait for a short moment (e.g., 100ms) to start the expansion.
+    // This is to ensure that CSS has been fully applied.
+    setTimeout(() => {
+        expandingPara.style.maxWidth = "100%";
+        expandingPara.style.maxHeight = "100%";
+        expandingPara.style.opacity = "1";
+    }, 100);
+});
+
+    </script>
+</body>
+</html>

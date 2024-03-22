@@ -1,0 +1,25 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    padding: 10px ;
+}
+
+.logo-new {
+    margin: 0 10px;  /* Adding some spacing between logos */
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: block;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }

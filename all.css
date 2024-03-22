@@ -1,0 +1,17 @@
+.containernew {
+    /* width: 300px; */
+    /* height: 150px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.expandingPara {
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-width 3s, max-height 3s, opacity 3s;
+    /* white-space: nowrap; Prevents the text from wrapping while expanding */
+}
